@@ -2,7 +2,7 @@ import Link from "next/link";
 function Home() {
   return (
     <div>
-      <h1>Home Page</h1>
+      <h1>Home Page PRE_RENDERING</h1>
     </div>
   );
 }
