@@ -16,7 +16,6 @@ export default function Home() {
         heading="Stanisław Świerk"
         message="Łapię wartościowe momenty i zapisuje w obrazie na zawsze"
       />
-      <Slider slides={SliderData} />
       <Instargam />
     </>
   );

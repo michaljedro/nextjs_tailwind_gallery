@@ -30,27 +30,16 @@ const Navbar = () => {
       className="fixed left-0 top-0 w-full z-10 ease-in duration-300"
     >
       <div className="max-w-[1240px] m-auto flex justify-between items-center p-4 text-white">
-        <Link href="/">
-          <h1 style={{ color: `${textColor}` }} className="font-bold text-4xl">
-            Stanisław Świerk
-          </h1>
-        </Link>
         <ul style={{ color: `${textColor}` }} className="hidden sm:flex">
           <li className="p-4">
             <Link href="/">Strona Główna</Link>
           </li>
-          <li className="p-4">
-            <Link href="/#gallery">Galeria</Link>
-          </li>
-          <li className="p-4">
-            <Link href="/work">Work</Link>
-          </li>
+
           <li className="p-4">
             <Link href="/contact">Kontakt</Link>
           </li>
         </ul>
 
-        {/* Mobile Button */}
         <div onClick={handleNav} className="block sm:hidden z-10">
           {nav ? (
             <AiOutlineClose size={20} style={{ color: `${textColor}` }} />
@@ -58,7 +47,6 @@ const Navbar = () => {
             <AiOutlineMenu size={20} style={{ color: `${textColor}` }} />
           )}
         </div>
-        {/* Mobile Menu */}
         <div
           className={
             nav
@@ -83,7 +71,7 @@ const Navbar = () => {
               onClick={handleNav}
               className="p-4 text-4xl hover:text-gray-500"
             >
-              <Link href="/work">Work</Link>
+              <Link href="/portfolio">Galeria</Link>
             </li>
             <li
               onClick={handleNav}
