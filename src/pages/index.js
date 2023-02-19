@@ -1,8 +1,6 @@
 import Head from "next/head";
 import Hero from "../../components/Hero";
-import Navbar from "components/Navbar";
-import Slider from "components/Slider";
-import { SliderData } from "components/SliderData";
+
 import Instargam from "components/Instagram";
 export default function Home() {
   return (

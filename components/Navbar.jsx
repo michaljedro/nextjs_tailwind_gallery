@@ -54,30 +54,13 @@ const Navbar = () => {
               : "sm:hidden absolute top-0 left-[-100%] right-0 bottom-0 flex justify-center items-center w-full h-screen bg-black text-center ease-in duration-300"
           }
         >
-          <ul>
-            <li
-              onClick={handleNav}
-              className="p-4 text-4xl hover:text-gray-500"
-            >
-              <Link href="/">Home</Link>
+          <ul style={{ color: `${textColor}` }} className="hidden sm:flex">
+            <li className="p-4">
+              <Link href="/">Strona Główna</Link>
             </li>
-            <li
-              onClick={handleNav}
-              className="p-4 text-4xl hover:text-gray-500"
-            >
-              <Link href="/#gallery">Gallery</Link>
-            </li>
-            <li
-              onClick={handleNav}
-              className="p-4 text-4xl hover:text-gray-500"
-            >
-              <Link href="/portfolio">Galeria</Link>
-            </li>
-            <li
-              onClick={handleNav}
-              className="p-4 text-4xl hover:text-gray-500"
-            >
-              <Link href="/contact">Contact</Link>
+
+            <li className="p-4">
+              <Link href="/contact">Kontakt</Link>
             </li>
           </ul>
         </div>
